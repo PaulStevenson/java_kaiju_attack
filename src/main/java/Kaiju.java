@@ -24,4 +24,6 @@ public abstract class Kaiju {
 
     public abstract String monsterSays();
 
+//    public abstract int monsterAttack();
+
 }

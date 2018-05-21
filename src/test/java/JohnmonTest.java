@@ -1,3 +1,4 @@
+import Vehicle.Tank;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -6,6 +7,7 @@ import static org.junit.Assert.assertEquals;
 public class JohnmonTest {
 
     Johnmon johnmon;
+    Tank tank;
 
     @Before
     public void before(){
@@ -31,5 +33,9 @@ public class JohnmonTest {
     public void monsterSays(){
         assertEquals("My name is John and I say Rawr", johnmon.monsterSays());
     }
+
+//    @public void monsterAttack(){
+//        johnmon.monsterAttack(canGetAttack());
+//    }
 
 }

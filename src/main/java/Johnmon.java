@@ -10,5 +10,7 @@ public class Johnmon extends Kaiju {
     }
 
 
+
+
 }
 
