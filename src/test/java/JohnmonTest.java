@@ -1,3 +1,4 @@
+import Kaijus.Kaiju;
 import Vehicle.Tank;
 import org.junit.Before;
 import org.junit.Test;
@@ -6,17 +7,17 @@ import static org.junit.Assert.assertEquals;
 
 public class JohnmonTest {
 
-    Johnmon johnmon;
+    Kaiju.Johnmon johnmon;
     Tank tank;
 
     @Before
     public void before(){
-        johnmon = new Johnmon("Johnmon", 100, 30);
+        johnmon = new Kaiju.Johnmon("Kaijus.Kaiju.Johnmon", 100, 30);
     }
 
     @Test
     public void canGetName(){
-        assertEquals("Johnmon", johnmon.getName());
+        assertEquals("Kaijus.Kaiju.Johnmon", johnmon.getName());
     }
 
     @Test

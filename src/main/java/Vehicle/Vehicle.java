@@ -1,12 +1,13 @@
 package Vehicle;
 
+
 public abstract class Vehicle{
 
     private String type;
     private int vehicleHealth;
     private int attackOne;
     private int attackTwo;
-  
+
 
 
     public Vehicle(String type, int vehicleHealth, int attackOne, int attackTwo){
