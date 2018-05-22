@@ -32,6 +32,11 @@ public class JohnmonTest {
     }
 
     @Test
+    public void monsterMoves(){
+        assertEquals("Rollin rollin rollin", johnmon.monsterMoves());
+    }
+
+    @Test
     public void monsterSays(){
         assertEquals("My name is John and I say Rawr", johnmon.monsterSays());
     }

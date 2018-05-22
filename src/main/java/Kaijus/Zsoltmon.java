@@ -19,4 +19,8 @@ public class Zsoltmon extends Kaiju implements IAttack {
         this.health -= vehicle.getAttackOne();
 
     }
+
+    public String monsterMoves() {
+        return "I beleive I can fly!";
+    }
 }

@@ -10,5 +10,12 @@ public class Johnmon extends Kaiju {
     public String monsterSays() {
         return "My name is John and I say Rawr";
     }
+
+
+
+    public String monsterMoves() {
+        return "Rollin rollin rollin";
+
+    }
 }
 

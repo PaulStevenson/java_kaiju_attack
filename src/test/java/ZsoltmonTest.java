@@ -41,6 +41,11 @@ public class ZsoltmonTest {
         }
 
         @Test
+        public void monsterMoves(){
+            assertEquals("I beleive I can fly!", zsoltmon.monsterMoves());
+        }
+
+        @Test
         public void militaryAttack(){
             zsoltmon.militaryAttack(tank);
             assertEquals(85, zsoltmon.getHealth());
