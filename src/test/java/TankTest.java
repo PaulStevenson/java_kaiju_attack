@@ -1,3 +1,4 @@
+import Kaijus.Johnmon;
 import Kaijus.Kaiju;
 import Vehicle.Tank;
 import org.junit.Before;
@@ -8,12 +9,12 @@ import static org.junit.Assert.assertEquals;
 public class TankTest {
 
     Tank tank;
-    Kaiju.Johnmon johnmon;
+    Kaiju johnmon;
 
     @Before
     public void before(){
         tank = new Tank("Tank", 50, 15, 25);
-        johnmon = new Kaiju.Johnmon("Kaijus.Kaiju.Johnmon", 100, 30);
+        johnmon = new Johnmon("Johnmon", 100, 30);
     }
 
     @Test
@@ -36,11 +37,13 @@ public class TankTest {
         assertEquals(25, tank.getAttackTwo());
     }
 
-//    @Test
-//    public void damageVehicle(Tank tank, Kaijus.Kaiju.Johnmon johnmon){
-//        johnmon.getAttack();
-//        assertEquals(20, tank.getVehicleHealth());
-//    }
+    @Test
+    public void canBeDamaged(){
+        tank.causeDamange(johnmon);
+        assertEquals(20, tank.getVehicleHealth());
+    }
+
+
 
 
 }

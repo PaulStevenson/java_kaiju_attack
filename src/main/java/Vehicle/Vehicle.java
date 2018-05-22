@@ -3,10 +3,10 @@ package Vehicle;
 
 public abstract class Vehicle{
 
-    private String type;
-    private int vehicleHealth;
-    private int attackOne;
-    private int attackTwo;
+    protected String type;
+    protected int vehicleHealth;
+    protected int attackOne;
+    protected int attackTwo;
 
 
 
