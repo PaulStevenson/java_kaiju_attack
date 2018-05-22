@@ -1,6 +1,9 @@
 package Kaijus;
 
-public class Zsoltmon extends Kaiju {
+import Vehicle.Vehicle;
+
+public class Zsoltmon extends Kaiju implements IAttack {
+
 
     public Zsoltmon(String name, int health, int attack) {
         super(name, health, attack);
@@ -11,4 +14,9 @@ public class Zsoltmon extends Kaiju {
         return "Yada Yada Yada";
     }
 
+    @Override
+    public void militaryAttack(Vehicle vehicle) {
+        this.health -= vehicle.getAttackOne();
+
+    }
 }

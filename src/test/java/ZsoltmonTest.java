@@ -2,6 +2,8 @@
     
     
 import Kaijus.Zsoltmon;
+import Vehicle.Tank;
+import Vehicle.Vehicle;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,7 +13,7 @@ import static org.junit.Assert.assertEquals;
 public class ZsoltmonTest {
 
         Zsoltmon zsoltmon;
-        
+        Vehicle tank;
 
         @Before
         public void before(){
@@ -36,6 +38,12 @@ public class ZsoltmonTest {
         @Test
         public void monsterSays(){
             assertEquals("Yada Yada Yada", zsoltmon.monsterSays());
+        }
+
+        @Test
+        public void militaryAttack(){
+            zsoltmon.militaryAttack(tank);
+            assertEquals(85, zsoltmon.getHealth());
         }
 
 

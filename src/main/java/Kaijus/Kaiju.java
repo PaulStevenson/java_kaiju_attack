@@ -2,9 +2,9 @@ package Kaijus;
 
 public abstract class Kaiju {
 
-    private String name;
-    private int health;
-    private int attack;
+    protected String name;
+    protected int health;
+    protected int attack;
 
     public Kaiju(String name, int health, int attack){
         this.name = name;

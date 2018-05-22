@@ -1,6 +1,4 @@
 package Vehicle;
-
-
 import Kaijus.Kaiju;
 
 public class Tank extends Vehicle implements IAttack{
